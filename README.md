@@ -20,9 +20,9 @@ def isEven(value):
 
 1. ```python
    def isEven(value):
-      return value % 2 == 0
+     return value % 2 == 0
 
 2. ```python
    def is_even(value):
-    return (value & 1) == 0
+     return (value & 1) == 0
 
