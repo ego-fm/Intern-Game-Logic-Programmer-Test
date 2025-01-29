@@ -12,3 +12,8 @@ def isEven(value):
 
       return value % 2 == 0
 ```
+</details>
+
+[Мой код](https://github.com/ego-fm/Intern-Game-Logic-Programmer-Test/blob/main/isEven.py)
+
+**Сравнение реализаций**
