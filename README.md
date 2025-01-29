@@ -12,6 +12,7 @@ def isEven(value):
 
       return value % 2 == 0
 ```
+
 </details>
 
 [Мой код](https://github.com/ego-fm/Intern-Game-Logic-Programmer-Test/blob/main/isEven.py)
@@ -21,10 +22,12 @@ def isEven(value):
 1. ```python
    def isEven(value):
      return value % 2 == 0
+   ```
 
 2. ```python
    def is_even(value):
      return (value & 1) == 0
+   ```
 
 **1 Вариант (остаток от деления):**
 
@@ -45,4 +48,20 @@ def isEven(value):
   <summary>Условие задания</summary>
 
 На языке Python написать минимум по 2 класса реализовывающих циклический буфер FIFO. Объяснить плюсы и минусы каждой реализации.
+
+</details>
+
+[Реализация 1: На массиве с управлением индексами](https://github.com/ego-fm/Intern-Game-Logic-Programmer-Test/blob/main/fifoBuffer/CircularBufferList.py)
+
+[Реализация 2: На базе collections.deque](https://github.com/ego-fm/Intern-Game-Logic-Programmer-Test/blob/main/fifoBuffer/CircularBufferDeque.py)
+
+
+| Критерий | CircularBufferList | CircularBufferDeque |
+| --- | --- | --- |
+| Используемая структура | Массив фиксированной длины | Коллекция deque из модуля collections |
+| Простота реализации | Реализация сложнее из-за ручного управления указателями | Реализация проще благодаря встроенным методам |
+| Скорость операций | Константное время O(1) для вставки/удаления, но есть небольшие накладные расходы на управление указателями | Константное время O(1) для вставки/удаления, благодаря оптимизации deque |
+| Использование памяти | Более компактно, так как использует фиксированный массив | deque использует больше памяти для служебных данных |
+
+
 
