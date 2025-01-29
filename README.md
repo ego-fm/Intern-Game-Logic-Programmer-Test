@@ -16,4 +16,13 @@ def isEven(value):
 
 [Мой код](https://github.com/ego-fm/Intern-Game-Logic-Programmer-Test/blob/main/isEven.py)
 
-**Сравнение реализаций**
+**Сравнение реализаций:**
+
+1. ```python
+   def isEven(value):
+      return value % 2 == 0
+
+2. ```python
+   def is_even(value):
+    return (value & 1) == 0
+
